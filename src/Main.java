@@ -113,12 +113,11 @@ public class Main {
 
     Scanner scanner5 = new Scanner(System.in);
     Scanner scanner6 = new Scanner(System.in);
-        System.out.println("Ingresa tu mes de nacimiento");
-        String mesNacimento = scanner5.next();
+        System.out.println("Ingresa tu mes de nacimiento en numero");
+        int mesNacimento = scanner5.nextInt();
         System.out.println("Ingresa el día de tu nacimiento");
         int diaNacimiento = scanner6.nextInt();
-
-    String abril = "abril";
+/*    String abril = "abril";
     String mayo = "mayo ";
     String junio = "junio";
     String julio = "julio";
@@ -129,9 +128,37 @@ public class Main {
     String diciembre = "diciembre";
     String enero = "enero";
     String febrero = " febrero";
-    String marzo = "marzo";
+    String marzo = "marzo";*/
 
-if (Obje
+if ((mesNacimento == 3 && diaNacimiento >= 21 && diaNacimiento <= 31 ) || (mesNacimento == 4 && diaNacimiento <= 19)) {
+    System.out.println("Aries");;
+} else if ((mesNacimento == 4 && diaNacimiento >= 20 && diaNacimiento <= 30) || (mesNacimento == 5 && diaNacimiento <= 20))  {
+    System.out.println("Tauro");
+} else if ((mesNacimento == 5 && diaNacimiento >= 21 && diaNacimiento <= 31) || (mesNacimento == 6 && diaNacimiento <= 20)) {
+    System.out.println("Géminis");
+} else if ((mesNacimento == 6 && diaNacimiento >= 21 && diaNacimiento <= 30) || (mesNacimento == 7 && diaNacimiento <= 22)) {
+    System.out.println("Cáncer");
+} else if ((mesNacimento == 7 && diaNacimiento >= 23 && diaNacimiento <= 31) || (mesNacimento == 8 && diaNacimiento <= 22)) {
+    System.out.println("Leo");
+} else if ((mesNacimento == 8 && diaNacimiento >= 20 && diaNacimiento <= 31) || (mesNacimento == 9 && diaNacimiento <= 22))  {
+    System.out.println("Virgo");
+} else if ((mesNacimento == 9 && diaNacimiento >= 21 && diaNacimiento <= 30) || (mesNacimento == 10 && diaNacimiento <= 22)) {
+    System.out.println("Libra");
+} else if ((mesNacimento == 10 && diaNacimiento >= 21 && diaNacimiento <= 31) || (mesNacimento == 11 && diaNacimiento <= 21)) {
+    System.out.println("Escorpion");
+} else if ((mesNacimento == 11 && diaNacimiento >= 23 && diaNacimiento <= 30) || (mesNacimento == 12 && diaNacimiento <= 21)) {
+    System.out.println("Sagitario");
+} else if ((mesNacimento == 12 && diaNacimiento >= 20 && diaNacimiento <= 31) || (mesNacimento == 1 && diaNacimiento <= 19))  {
+    System.out.println("Capricornio");
+} else if ((mesNacimento == 1 && diaNacimiento >= 21 && diaNacimiento <= 31) || (mesNacimento == 2 && diaNacimiento <= 18)) {
+    System.out.println("Acuario");
+} else if ((mesNacimento == 2 && diaNacimiento >= 21 && diaNacimiento <= 28) || (mesNacimento == 3 && diaNacimiento <= 20)) {
+    System.out.println("Piscis");
+} else {
+    System.out.println("Ingresa un dato correcto");
+}
+
+
 
 
 //        Determinar el día de la semana
