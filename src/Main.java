@@ -87,6 +87,68 @@ public class Main {
                 break;
         }
 
+//  /*      Días de la semana
+//        Escribe un programa en Java que solicite al usuario un número del 1 al 7 que represente un día de la semana, donde 1 es lunes y 7 es domingo. El programa debe mostrar en pantalla el nombre del día correspondiente utilizando la estructura "switch".  */
+
+        Scanner scanner7 = new Scanner(System.in);
+        System.out.println("Ingresa un número de la semana");
+        int numeroSemana = scanner7.nextInt();
+
+        switch (numeroSemana) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 8:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Ingresa un número del 1 al 7.");
+                System.out.println("------------------------------");
+        }
+
+///*        Conversor de unidades
+//        Escribe un programa en Java que solicite al usuario un número entero que represente una opción de conversión de unidades: 1 para convertir de grados Celsius a Fahrenheit y 2 para convertir de pulgadas a centímetros. Luego, el programa debe solicitar la cantidad a convertir y mostrar el resultado de la conversión utilizando la estructura "switch".*/
+
+Scanner scanner8 = new Scanner(System.in);
+Scanner scanner9 = new Scanner(System.in);
+        System.out.println("Ingresa un numero del 1 al 2");
+        System.out.println("1 para convertir de Celsius a Fahrenheit");
+        System.out.println("2 para convertir de Pulgadas a Centímetros");
+        int convertir = scanner8.nextInt();
+        System.out.println("Ingresa la cantidad a convertir:");
+        double unidades = scanner9.nextInt();
+
+        switch (convertir) {
+            case 1:
+              double fahrenheit = (unidades * 9/5) + 32;
+                System.out.println("La temperatura Celsius: " + unidades + "° son en Fahrenheit: " + fahrenheit + " °Grados");
+                break;
+            case 2:
+              double medida = (unidades * 2.54);
+                System.out.println("Las pulgadas " + unidades + ". Son en Centímetros " + medida);
+              break;
+            default:
+                System.out.println("Ingresa un numero correcto.");
+        }
+
+
+
+
 //        Categoría de edad
 //        Escribe un programa en Java que solicite al usuario su edad y determine en qué categoría se encuentra: niño (0-12 años), adolescente (13-17 años), adulto (18-59 años) o adulto mayor (60 años en adelante). El programa debe mostrar en pantalla la categoría correspondiente.
 
@@ -155,7 +217,7 @@ if ((mesNacimento == 3 && diaNacimiento >= 21 && diaNacimiento <= 31 ) || (mesNa
 } else if ((mesNacimento == 2 && diaNacimiento >= 21 && diaNacimiento <= 28) || (mesNacimento == 3 && diaNacimiento <= 20)) {
     System.out.println("Piscis");
 } else {
-    System.out.println("Ingresa un dato correcto");
+    System.out.println("Fecha de nacimiento no válida");
 }
 
 
