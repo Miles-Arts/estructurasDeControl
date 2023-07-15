@@ -131,32 +131,7 @@ public class Main {
     String febrero = " febrero";
     String marzo = "marzo";
 
-if (Objects.equals(mesNacimento, abril) && Objects.equals(mesNacimento, marzo) || diaNacimiento >= 1 && diaNacimiento <=  30 ) {
-    System.out.println("Tu signo zodiacal es Aries.");
-
-} else if (Objects.equals(mesNacimento, mayo) && diaNacimiento >= 1 && diaNacimiento <= 20) {
-    System.out.println("Tu signo zodiacal es Tauro.");
-} else if ( Objects.equals(mesNacimento, junio) && diaNacimiento >= 1 && diaNacimiento <= 21) {
-    System.out.println("Tu signo zodiacla es Géminis.");
-} else if (Objects.equals(mesNacimento, julio) && diaNacimiento >= 1 && diaNacimiento <=22 ) {
-    System.out.println("Tu signo zodiacla es Cáncer.");
-} else if (Objects.equals(mesNacimento, agosto) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Leo");
-} else if (Objects.equals(mesNacimento, septiembre) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Virgo");
-} else if (Objects.equals(mesNacimento, octubre) && diaNacimiento >= 1 && diaNacimiento <=23) {
-        System.out.println("Tu signo zodiacla es Libra");
-} else if (Objects.equals(mesNacimento, noviembre) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Escorpion");
-} else if (Objects.equals(mesNacimento, diciembre) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Sagitario");
-} else if (Objects.equals(mesNacimento, enero) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Capricornio");
-} else if (Objects.equals(mesNacimento, febrero) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Acuario");
-} else if (Objects.equals(mesNacimento, marzo) && diaNacimiento >= 1 && diaNacimiento <=23) {
-    System.out.println("Tu signo zodiacla es Piscis");
-}
+if (Obje
 
 
 //        Determinar el día de la semana
