@@ -14,6 +14,7 @@ public class Main {
         int edad = 18;
         if (edad >= 18) {
             System.out.println("Eres mayor de edad puedes ingresar");
+            System.out.println("------------------------------");
         }
 
 
@@ -25,13 +26,13 @@ public class Main {
             System.out.println("Eres del año 1996");
         } else {
             System.out.println("Eres del año " + years );
-        }
+        }  System.out.println("------------------------------");
 
         String dia1 = "Lunes";
         String dia2 = "Martes";
         if ( dia1 != dia2) {
             System.out.println("El día " + dia1 + " es distinto al día " + dia2);
-        }
+        }  System.out.println("------------------------------");
 
         //IF ELSE
 
@@ -57,7 +58,8 @@ public class Main {
             System.out.println("Reprobado");
         }
 
-
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
         //Switch
 
         int diaSemana = 8;
@@ -86,6 +88,8 @@ public class Main {
                 System.out.println("Día no válido");
                 break;
         }
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
 //  /*      Días de la semana
 //        Escribe un programa en Java que solicite al usuario un número del 1 al 7 que represente un día de la semana, donde 1 es lunes y 7 es domingo. El programa debe mostrar en pantalla el nombre del día correspondiente utilizando la estructura "switch".  */
@@ -118,36 +122,89 @@ public class Main {
                 break;
             default:
                 System.out.println("Ingresa un número del 1 al 7.");
-                System.out.println("------------------------------");
+
         }
+
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
 ///*        Conversor de unidades
 //        Escribe un programa en Java que solicite al usuario un número entero que represente una opción de conversión de unidades: 1 para convertir de grados Celsius a Fahrenheit y 2 para convertir de pulgadas a centímetros. Luego, el programa debe solicitar la cantidad a convertir y mostrar el resultado de la conversión utilizando la estructura "switch".*/
 
 Scanner scanner8 = new Scanner(System.in);
 Scanner scanner9 = new Scanner(System.in);
-        System.out.println("Ingresa un numero del 1 al 2");
-        System.out.println("1 para convertir de Celsius a Fahrenheit");
-        System.out.println("2 para convertir de Pulgadas a Centímetros");
+        System.out.println("Ingresa un numero del 1 al 2:");
+        System.out.println("1 para convertir de Celsius a Fahrenheit.");
+        System.out.println("2 para convertir de Pulgadas a Centímetros.");
         int convertir = scanner8.nextInt();
         System.out.println("Ingresa la cantidad a convertir:");
         double unidades = scanner9.nextInt();
 
         switch (convertir) {
+
             case 1:
               double fahrenheit = (unidades * 9/5) + 32;
                 System.out.println("La temperatura Celsius: " + unidades + "° son en Fahrenheit: " + fahrenheit + " °Grados");
                 break;
+
             case 2:
               double medida = (unidades * 2.54);
-                System.out.println("Las pulgadas " + unidades + ". Son en Centímetros " + medida);
+                System.out.println("Las Pulgadas: " + unidades + ". Son en Centímetros: " + medida);
               break;
+
             default:
                 System.out.println("Ingresa un numero correcto.");
+
         }
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
+
+//      /*  Calculadora básica
+//        Escribe un programa en Java que solicite al usuario dos números y una operación matemática (suma, resta, multiplicación o división). Luego, utiliza la estructura "switch" para realizar la operación seleccionada y mostrar el resultado en pantalla.*/
 
 
+       Scanner scanner10 = new Scanner(System.in);
+       Scanner scanner11 = new Scanner(System.in);
+       Scanner scanner12 = new Scanner(System.in);
+       System.out.println("Ingresa a continuación dos números y una operación matemática:");
+        System.out.println("Primero número: ");
+        double numeroUno = scanner10.nextInt();
+        System.out.println("Segundo número: ");
+        double numeroDos = scanner11.nextInt();
+        System.out.println("Ingresa la operación matemática");
+        String operacion = scanner12.next();
 
+        String suma = "suma";
+        String resta = "resta";
+        String multiplicacion = "multiplicacion";
+        String division = "division";
+        double resultado;
+
+        switch (operacion) {
+
+            case "suma":
+                resultado = numeroUno + numeroDos;
+                System.out.println("El resultado de la suma es: " + resultado);
+                break;
+
+            case  "resta":
+                resultado = numeroUno - numeroDos;
+                System.out.println("El resultado de la resta es: " + resultado);
+                break;
+
+            case "multiplicacion":
+                resultado = numeroUno * numeroDos;
+                System.out.println("El resultado de la multiplicación es: " + resultado);
+                break;
+            case "division":
+                resultado = numeroUno / numeroDos;
+                System.out.println("El resultado de la division es: " + resultado);
+                break;
+            default:
+                System.out.println("Ingresa los datos correctos");
+        }
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
 //        Categoría de edad
 //        Escribe un programa en Java que solicite al usuario su edad y determine en qué categoría se encuentra: niño (0-12 años), adolescente (13-17 años), adulto (18-59 años) o adulto mayor (60 años en adelante). El programa debe mostrar en pantalla la categoría correspondiente.
@@ -167,6 +224,9 @@ Scanner scanner9 = new Scanner(System.in);
        } else if ( edadPersona >= 100){
            System.out.println("El número: "+ edadPersona + ". No es correcto ");
        }
+
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
 
 //        Ejercicio 2: Calculadora de signo zodiacal
@@ -220,6 +280,8 @@ if ((mesNacimento == 3 && diaNacimiento >= 21 && diaNacimiento <= 31 ) || (mesNa
     System.out.println("Fecha de nacimiento no válida");
 }
 
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
 
 
@@ -263,6 +325,9 @@ if ((mesNacimento == 3 && diaNacimiento >= 21 && diaNacimiento <= 31 ) || (mesNa
         } else {
             System.out.println("Tu compra de $" + montoTotal +" USD es menor de $100 USD, no tiene descuento");
         }
+
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
 
     }
 }
