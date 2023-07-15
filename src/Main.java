@@ -101,15 +101,15 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Ingresa el monto total de tu compra en USD");
         int montoTotal = scanner1.nextInt();
-
+        double porcentajeDescuento =  0.1;
         if ( montoTotal >= 100 ) {
-            double descuento = montoTotal * 0.1 / montoTotal;
-            //double montoDescuento = descuento;
+            double descuento = montoTotal * porcentajeDescuento;
+            double montoDescuento = montoTotal - descuento;
 
-            System.out.println("Tu compra de " + montoTotal + " tienes 10% de descuento y pagarás " + descuento);
+            System.out.println("Tu compra de $" + montoTotal + " USD tienes 10% de descuento y pagarás $" + montoDescuento + " USD.");
 
         } else {
-            System.out.println("Tu compre de " + montoTotal +" es menor de $100 USD no tienes descuento");
+            System.out.println("Tu compra de $" + montoTotal +" USD es menor de $100 USD, no tiene descuento");
         }
 
     }
