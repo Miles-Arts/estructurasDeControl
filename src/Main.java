@@ -459,8 +459,37 @@ public class Main {
 //            System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolares.");
 //        }
 
+ /*       Ejercicio 1: Evaluación de una calificación (más complejo)
+        Escribe un programa en Java que solicite al usuario una calificación numérica (del 0 al 100) y determine la evaluación correspondiente utilizando if, else if.
 
+        Si la calificación está entre 90 y 100, mostrar "Excelente".
+                Si la calificación está entre 80 y 89, mostrar "Sobresaliente".
+                Si la calificación está entre 70 y 79, mostrar "Aceptable".
+                Si la calificación está entre 60 y 69, mostrar "Necesita mejorar".
+                Si la calificación está entre 50 y 59, mostrar "Insuficiente".
+                Si la calificación está entre 0 y 49, mostrar "Reprobado".
+                Si la calificación es menor que 0 o mayor que 100, mostrar "Calificación inválida".*/
 
+        Scanner scanner20 = new Scanner(System.in);
+        System.out.println("Ingresa una califiación del (0 al 100)");
+
+        double notas = scanner20.nextDouble();
+
+       if ( notas >= 90 && notas <= 100 )  {
+            System.out.println("Excelente");
+        } else if ( notas >= 80 && notas <= 89) {
+            System.out.println("Sobresaliente");
+        } else if ( notas >= 70 && notas <= 79 ) {
+            System.out.println("Aceptable");
+        } else if ( notas >= 60 && notas <= 69 ) {
+            System.out.println("Necesista Mejorar");
+        } else if ( notas >= 50 && notas <= 59) {
+            System.out.println("Insificiente");
+        } else if ( notas >= 0 && notas <= 49) {
+            System.out.println("Reprobado");
+        } else if ( notas <= -1 || notas >= 101) {
+            System.out.println("Calificación inválida");
+        }
 
     }
 }
