@@ -470,7 +470,7 @@ public class Main {
                 Si la calificación está entre 0 y 49, mostrar "Reprobado".
                 Si la calificación es menor que 0 o mayor que 100, mostrar "Calificación inválida".*/
 
-        Scanner scanner20 = new Scanner(System.in);
+    /*    Scanner scanner20 = new Scanner(System.in);
         System.out.println("Ingresa una califiación del (0 al 100)");
 
         double notas = scanner20.nextDouble();
@@ -489,7 +489,65 @@ public class Main {
             System.out.println("Reprobado");
         } else if ( notas <= -1 || notas >= 101) {
             System.out.println("Calificación inválida");
+        }*/
+
+
+        /*Claro, aquí tienes los mismos ejercicios, pero un poco más complejos para que los resuelvas utilizando if, else if y switch en Java:
+
+        Ejercicio 1: Evaluación de una calificación (más complejo)
+        Escribe un programa en Java que solicite al usuario una calificación numérica (del 0 al 100) y determine la evaluación correspondiente utilizando if, else if.
+
+        Si la calificación está entre 90 y 100, mostrar "Excelente".
+                Si la calificación está entre 80 y 89, mostrar "Sobresaliente".
+                Si la calificación está entre 70 y 79, mostrar "Aceptable".
+                Si la calificación está entre 60 y 69, mostrar "Necesita mejorar".
+                Si la calificación está entre 50 y 59, mostrar "Insuficiente".
+                Si la calificación está entre 0 y 49, mostrar "Reprobado".
+                Si la calificación es menor que 0 o mayor que 100, mostrar "Calificación inválida".
+                Ejercicio 2: Día de la semana (más complejo)
+        Escribe un programa en Java que solicite al usuario un número del 1 al 7 que represente un día de la semana, donde 1 es lunes y 7 es domingo. Utiliza switch para determinar el nombre del día correspondiente y mostrarlo en pantalla. Si el número ingresado no está en el rango válido, mostrar un mensaje de error.
+
+        Si el número ingresado es 1, mostrar "Lunes".
+                Si el número ingresado es 2, mostrar "Martes".
+                Si el número ingresado es 3, mostrar "Miércoles".
+                Si el número ingresado es 4, mostrar "Jueves".
+                Si el número ingresado es 5, mostrar "Viernes".
+                Si el número ingresado es 6, mostrar "Sábado".
+                Si el número ingresado es 7, mostrar "Domingo".
+                Si el número ingresado está fuera del rango válido (1 a 7), mostrar "Número de día inválido".*/
+
+
+        Scanner scanner21 = new Scanner(System.in);
+        System.out.println("Ingresa un días de la semana del 1 al 7");
+
+        int diaSemanal = scanner21.nextInt();
+
+        switch (diaSemanal){
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Número del día inválido");
         }
+
 
     }
 }
