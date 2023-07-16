@@ -563,12 +563,27 @@ public class Main {
         Scanner scanner23 = new Scanner(System.in);
 
         System.out.println("Ingresa el peso en kilos del paquete: ");
-        double kiloPaquete = scanner22.nextDouble();
+        double pesoPaquete = scanner22.nextDouble();
 
         System.out.println("Ingresa la distancia que será llevado el paquete");
         double distanciaPaquete = scanner23.nextDouble();
 
 
+        if ( pesoPaquete <= 2 && distanciaPaquete <= 50 ){
+
+            System.out.println("El costo del envío es de $10 USD.");
+
+        } else if ( pesoPaquete > 2 && pesoPaquete <= 5 &&  distanciaPaquete >= 50 && distanciaPaquete <= 200 ) {
+
+            System.out.println("El costo del envío es de $20 USD.");
+
+        } else if ( pesoPaquete > 5 && pesoPaquete <= 10 && distanciaPaquete >= 200 && distanciaPaquete <= 500) {
+
+            System.out.println("El costo del envío es de $30 USD.");
+
+        } else if ( pesoPaquete >= 11 && distanciaPaquete >= 501 ) {
+            System.out.println("El costo del envío es de $50 USD.");
+        }
 
     }
 }
