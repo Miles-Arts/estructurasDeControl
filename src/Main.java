@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -409,54 +410,42 @@ public class Main {
         String euro = "euro";
         String pesos = "pesos";
 
-        double dolares = 1;
         double resultado;
 
-        if (dinero > 0) {
-            switch (origen) {
-
-                case "dolar":
-                    if("dolar" == "euro" ) {
+                    if(Objects.equals(origen, "dolar") && Objects.equals(destino, "euro")) {
                         double euros = 0.89;
                         resultado = dinero * euros;
                         System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " euros.");
-                        break;
-                    } else if ("dolar" != "pesos"){
+
+                    } else if (Objects.equals(origen, "dolar") && Objects.equals(destino, "pesos")){
                         double dolar1 = 4087.83;
                         resultado = dinero * dolar1;
                         System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " pesos.");
-                        break;
-                    }
 
-                case "euro":
-                   if ("euro" == "dolar"){
+                    } else if (Objects.equals(origen, "euro") && Objects.equals(destino, "dolar")){
                        double dolares1 = 1.12;
                        resultado = Math.round(dinero * dolares1);
                        System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolaresS.");
-                       break;
-                   } else  if ("euro" != "pesos") {
+
+                   } else  if (Objects.equals(origen, "euro") && Objects.equals(destino, "pesos")) {
                        double euro1 = 4598.20;
                        resultado = Math.round(dinero * euro1);
                        System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " pesos.");
-                       break;
                    }
-                case "pesos":
-                  if ("pesos" == "dolar") {
+
+                  else if (Objects.equals(origen, "pesos") && Objects.equals(destino, "dolar")) {
                       double dolares2 = 0.00024;
                       //resultado = Math.round(dinero * dolares2);
                       resultado = dinero * dolares2;
                       System.out.println("$" + dinero + " pesos aquivalen a $" + resultado + " dolares.");
-                      break;
-                  } else if ("pesos" == "euro") {
+
+                  } else if (Objects.equals(origen, "pesos") && Objects.equals(destino, "euro")) {
                       double euro2 = 0.00022;
                       //resultado = Math.round(dinero * dolares2);
                       resultado = dinero * euro2;
                       System.out.println("$" + dinero + " pesos aquivalen a $" + resultado + " euros.");
-                      break;
                   }
 
-            }
-        }
         System.out.println("Ingresa números");
 //        if (dolar == dolar || euro == euro) {
 //            double euros = 0.89;
