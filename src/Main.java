@@ -573,11 +573,11 @@ public class Main {
 
             System.out.println("El costo del envío es de $10 USD.");
 
-        } else if ( pesoPaquete > 2 && pesoPaquete <= 5 &&  distanciaPaquete >= 50 && distanciaPaquete <= 200 ) {
+        } else if ( pesoPaquete >= 2 && pesoPaquete <= 5 &&  distanciaPaquete >= 51 && distanciaPaquete <= 200 ) {
 
             System.out.println("El costo del envío es de $20 USD.");
 
-        } else if ( pesoPaquete > 5 && pesoPaquete <= 10 && distanciaPaquete >= 200 && distanciaPaquete <= 500) {
+        } else if ( pesoPaquete >= 5 && pesoPaquete <= 10 && distanciaPaquete >= 201 && distanciaPaquete <= 500) {
 
             System.out.println("El costo del envío es de $30 USD.");
 
