@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void  main(String[] args) {
+    public static void main(String[] args) {
 
 
 //        System.out.println("Hello world!");
@@ -362,53 +362,72 @@ public class Main {
 ///*
 //        Clasificación de triángulos
 //        Escribe un programa en Java que solicite al usuario las longitudes de los tres lados de un triángulo. Luego, utiliza una combinación de if, else if y switch para determinar y mostrar en pantalla qué tipo de triángulo es: equilátero, isósceles o escaleno.*/
+//
+//        Scanner scanner14 = new Scanner(System.in);
+//        Scanner scanner15 = new Scanner(System.in);
+//        Scanner scanner16 = new Scanner(System.in);
+//
+//        System.out.println("Ingrese a continuación la medida de los tres lado del triángulo.");
+//
+//        System.out.println("Ingrese la longitud del lado 1: ");
+//        double ladoUno = scanner14.nextInt();
+//        System.out.println("Ingrese la longitud del lado 2: ");
+//        double ladoDos = scanner15.nextInt();
+//        System.out.println("Ingrese la longitud del lado 3: ");
+//        double ladoTres = scanner16.nextInt();
+//
+//        String isoceles;
+//        String escaleno;
+//        String equilatero;
+//
+//        if (ladoUno == ladoDos && ladoDos == ladoTres) {
+//            System.out.println("El triángulo es equilátero");
+//        } else if (ladoUno == ladoDos || ladoDos == ladoTres || ladoUno == ladoTres) {
+//            System.out.println("El triángulo es isóceles");
+//        } else {
+//            System.out.println("el triángulo es escaleno");
+//        }
+//
+//        System.out.println("------------------------------");
+//        System.out.println("------------------------------");
 
-        Scanner scanner14 = new Scanner(System.in);
-        Scanner scanner15 = new Scanner(System.in);
-        Scanner scanner16 = new Scanner(System.in);
 
-        System.out.println("Ingrese a continuación la medida de los tres lado del triángulo.");
+        Scanner scanner17 = new Scanner(System.in);
+        Scanner scanner18 = new Scanner(System.in);
+        Scanner scanner19 = new Scanner(System.in);
 
-        System.out.println("Ingrese la longitud del lado 1: ");
-        double ladoUno = scanner14.nextInt();
-        System.out.println("Ingrese la longitud del lado 2: ");
-        double ladoDos = scanner15.nextInt();
-        System.out.println("Ingrese la longitud del lado 3: ");
-        double ladoTres = scanner16.nextInt();
+        System.out.println("Ingresa la cantidad de dinero");
+        int dinero = scanner17.nextInt();
 
-        String isoceles;
-        String escaleno;
-        String equilatero;
+        System.out.println("Ingresa la modena de origen (dolar, euro, pesos) :");
+        String origen = scanner18.next();
 
-        if (ladoUno == ladoDos && ladoDos == ladoTres) {
-            System.out.println("El triángulo es equilátero");
-        } else if (ladoUno == ladoDos || ladoDos == ladoTres || ladoUno == ladoTres) {
-            System.out.println("El triángulo es isóceles");
-        } else {
-            System.out.println("el triángulo es escaleno");
+        System.out.println("Ingresa la moneda de destino (dolar, euro, pesos) :");
+        String destino = scanner19.next();
+
+        String dolar = "dolar";
+        String euro = "euro";
+        String pesos = "pesos";
+
+        double dolares = 1;
+
+
+        double peso = 4087.83;
+        double resultado;
+
+        if (dinero <= 0) {
+            System.out.println("Ingresa números");
         }
 
-        System.out.println("------------------------------");
-        System.out.println("------------------------------");
+        if (dolar == dolar || euro == euro) {
+            double euros = 0.89;
+            resultado = dinero * euros;
+            System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " euros.");
 
-
-    Scanner scanner17 = new Scanner(System.in);
-    Scanner scanner18 = new Scanner(System.in);
-    Scanner scanner19 = new Scanner(System.in);
-
-    System.out.println("Ingresa la cantidad de dinero");
-    double dinero = scanner17.nextDouble();
-
-    System.out.println("Ingresa la modena de origen (dolares, euros, pesos) :");
-    String origen = scanner18.next();
-
-    System.out.println("Ingresa la moneda de destino (dólares, euros, pesos) :");
-    String destino = scanner19.next();
-
-
-
-
-
-
+        } else if ( euro == euro || dolar == dolar ) {
+            double dolares1 = 1.12;
+            resultado = dinero * dolares1;
+            System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolares.");
+        }
     }
 }
