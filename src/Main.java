@@ -516,7 +516,7 @@ public class Main {
                 Si el número ingresado es 7, mostrar "Domingo".
                 Si el número ingresado está fuera del rango válido (1 a 7), mostrar "Número de día inválido".*/
 
-
+/*
         Scanner scanner21 = new Scanner(System.in);
         System.out.println("Ingresa un días de la semana del 1 al 7");
 
@@ -546,7 +546,28 @@ public class Main {
                 break;
             default:
                 System.out.println("Número del día inválido");
-        }
+        }*/
+
+     /*   Calculadora de costos de envío
+        Escribe un programa en Java que solicite al usuario el peso de un paquete (en kilogramos) y la distancia a la que se enviará el paquete (en kilómetros). Luego, utiliza if y else if para calcular el costo de envío según las siguientes reglas:
+
+        Si el peso del paquete es menor o igual a 2 kg y la distancia es menor o igual a 50 km, el costo de envío es de $10.
+        Si el peso del paquete es mayor que 2 kg y menor o igual a 5 kg, o la distancia es mayor que 50 km y menor o igual a 200 km, el costo de envío es de $20.
+        Si el peso del paquete es mayor que 5 kg y menor o igual a 10 kg, o la distancia es mayor que 200 km y menor o igual a 500 km, el costo de envío es de $30.
+        Para cualquier otra combinación de peso y distancia, el costo de envío es de $50.
+        Finalmente, muestra el costo de envío calculado en pantalla.
+
+                Recuerda que para leer la entrada del usuario, necesitarás utilizar la clase Scanner. Puedes importarla con import java.util.Scanner;. Además, asegúrate de cerrar el scanner después de usarlo con scanner.close();.*/
+
+        Scanner scanner22 = new Scanner(System.in);
+        Scanner scanner23 = new Scanner(System.in);
+
+        System.out.println("Ingresa el peso en kilos del paquete: ");
+        double kiloPaquete = scanner22.nextDouble();
+
+        System.out.println("Ingresa la distancia que será llevado el paquete");
+        double distanciaPaquete = scanner23.nextDouble();
+
 
 
     }
