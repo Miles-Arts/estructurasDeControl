@@ -410,29 +410,50 @@ public class Main {
         String pesos = "pesos";
 
         double dolares = 1;
-        double peso = 4087.83;
-
         double resultado;
 
         if (dinero > 0) {
             switch (origen) {
 
                 case "dolar":
-                    double euros = 0.89;
-                    resultado = dinero * euros;
-                    System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " euros.");
-                    break;
+                    if("dolar" == "euro" ) {
+                        double euros = 0.89;
+                        resultado = dinero * euros;
+                        System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " euros.");
+                        break;
+                    } else if ("dolar" != "pesos"){
+                        double dolar1 = 4087.83;
+                        resultado = dinero * dolar1;
+                        System.out.println("$" + dinero + " dólares aquivalen a $" + resultado + " pesos.");
+                        break;
+                    }
+
                 case "euro":
-                    double dolares1 = 1.12;
-                    resultado = Math.round(dinero * dolares1);
-                    System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolares.");
-                    break;
+                   if ("euro" == "dolar"){
+                       double dolares1 = 1.12;
+                       resultado = Math.round(dinero * dolares1);
+                       System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolaresS.");
+                       break;
+                   } else  if ("euro" != "pesos") {
+                       double euro1 = 4598.20;
+                       resultado = Math.round(dinero * euro1);
+                       System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " pesos.");
+                       break;
+                   }
                 case "pesos":
-                    double dolares2 = 0.00024;
-                    //resultado = Math.round(dinero * dolares2);
-                    resultado = dinero * dolares2;
-                    System.out.println("$" + dinero + " euros aquivalen a $" + resultado + " dolares.");
-                    break;
+                  if ("pesos" == "dolar") {
+                      double dolares2 = 0.00024;
+                      //resultado = Math.round(dinero * dolares2);
+                      resultado = dinero * dolares2;
+                      System.out.println("$" + dinero + " pesos aquivalen a $" + resultado + " dolares.");
+                      break;
+                  } else if ("pesos" == "euro") {
+                      double euro2 = 0.00022;
+                      //resultado = Math.round(dinero * dolares2);
+                      resultado = dinero * euro2;
+                      System.out.println("$" + dinero + " pesos aquivalen a $" + resultado + " euros.");
+                      break;
+                  }
 
             }
         }
