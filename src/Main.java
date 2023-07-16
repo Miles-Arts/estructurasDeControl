@@ -1,12 +1,8 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("---");
+    public static void  main(String[] args) {
 
 
 //        System.out.println("Hello world!");
@@ -95,7 +91,7 @@ public class Main {
 //        System.out.println("------------------------------");
 //
 ////  /*      Días de la semana
-////        Escribe un programa en Java que solicite al usuario un número del 1 al 7 que represente un día de la semana, donde 1 es lunes y 7 es domingo. El programa debe mostrar en pantalla el nombre del día correspondiente utilizando la estructura "switch".  */
+////        Escribe un programa en Java que solicite al usuario un número del 1 al 7 que represente un día de la semana, donde 1 es lunes y 7 es domingo. El    programa debe mostrar en pantalla el nombre del día correspondiente utilizando la estructura "switch".  */
 //
 //        Scanner scanner7 = new Scanner(System.in);
 //        System.out.println("Ingresa un número de la semana");
@@ -366,6 +362,51 @@ public class Main {
 ///*
 //        Clasificación de triángulos
 //        Escribe un programa en Java que solicite al usuario las longitudes de los tres lados de un triángulo. Luego, utiliza una combinación de if, else if y switch para determinar y mostrar en pantalla qué tipo de triángulo es: equilátero, isósceles o escaleno.*/
+
+        Scanner scanner14 = new Scanner(System.in);
+        Scanner scanner15 = new Scanner(System.in);
+        Scanner scanner16 = new Scanner(System.in);
+
+        System.out.println("Ingrese a continuación la medida de los tres lado del triángulo.");
+
+        System.out.println("Ingrese la longitud del lado 1: ");
+        double ladoUno = scanner14.nextInt();
+        System.out.println("Ingrese la longitud del lado 2: ");
+        double ladoDos = scanner15.nextInt();
+        System.out.println("Ingrese la longitud del lado 3: ");
+        double ladoTres = scanner16.nextInt();
+
+        String isoceles;
+        String escaleno;
+        String equilatero;
+
+        if (ladoUno == ladoDos && ladoDos == ladoTres) {
+            System.out.println("El triángulo es equilátero");
+        } else if (ladoUno == ladoDos || ladoDos == ladoTres || ladoUno == ladoTres) {
+            System.out.println("El triángulo es isóceles");
+        } else {
+            System.out.println("el triángulo es escaleno");
+        }
+
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
+
+
+    Scanner scanner17 = new Scanner(System.in);
+    Scanner scanner18 = new Scanner(System.in);
+    Scanner scanner19 = new Scanner(System.in);
+
+    System.out.println("Ingresa la cantidad de dinero");
+    double dinero = scanner17.nextDouble();
+
+    System.out.println("Ingresa la modena de origen (dolares, euros, pesos) :");
+    String origen = scanner18.next();
+
+    System.out.println("Ingresa la moneda de destino (dólares, euros, pesos) :");
+    String destino = scanner19.next();
+
+
+
 
 
 
